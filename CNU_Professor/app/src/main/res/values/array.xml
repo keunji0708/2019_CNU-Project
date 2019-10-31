@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="state">
+    <item> 강의 </item>
+    <item> 회의 </item>
+    <item> 외출 </item>
+    <item> 출장 </item>
+    <item> 퇴근 </item>
+</string-array>
+
+<string-array name="day">
+    <item> 월요일 </item>
+    <item> 화요일 </item>
+    <item> 수요일 </item>
+    <item> 목요일 </item>
+    <item> 금요일 </item>
+</string-array>
+
+<string-array name="hour">
+    <item> 09</item>
+    <item> 10 </item>
+    <item> 11 </item>
+    <item> 12 </item>
+    <item> 13 </item>
+    <item> 14 </item>
+    <item> 15 </item>
+    <item> 16 </item>
+    <item> 17 </item>
+    <item> 18 </item>
+</string-array>
+
+<string-array name="minute">
+    <item>00</item>
+    <item>10</item>
+    <item>20</item>
+    <item>30</item>
+    <item>40</item>
+    <item>50</item>
+</string-array>
+
+<string-array name="major">
+    <item>컴퓨터공학과</item>
+    <item>전자공학과</item>
+    <item>기계공학과</item>
+    <item>신소재공학과</item>
+</string-array>
+</resources>
