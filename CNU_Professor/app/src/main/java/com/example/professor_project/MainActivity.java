@@ -69,13 +69,12 @@ public class MainActivity extends BasicActivity {
             docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
                 @Override
                 public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                    roomTextView.setText(task.getResult().getData().get("room").toString());
-                    professorTextView.setText(task.getResult().getData().get("name").toString());
-
                     if (task.isSuccessful()) {
                         DocumentSnapshot document = task.getResult();
                         if (document != null) {
                             if (document.exists()) {
+                                roomTextView.setText(task.getResult().getData().get("room").toString());
+                                professorTextView.setText(task.getResult().getData().get("name").toString());
                                 Log.d(TAG, "DocumentSnapshot data: " + document.getData());
                             } else {
                                 Log.d(TAG, "No such document");
