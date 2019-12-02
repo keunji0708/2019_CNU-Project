@@ -201,6 +201,7 @@ public class WriteScheduleActivity extends BasicActivity {
                             startToast("스케줄 변경에 성공하였습니다.");
                         }
                         finish();
+                        myStartActivity(ScheduleActivity.class);
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
@@ -253,5 +254,10 @@ public class WriteScheduleActivity extends BasicActivity {
 
     @Override public void onBackPressed() {
         //뒤로가기 안먹이게
+    }
+    
+    private void myStartActivity(Class c) {
+        Intent intent = new Intent(this, c);
+        startActivity(intent);
     }
 }
